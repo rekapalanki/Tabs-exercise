@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./base.css">
     <script src="./script.js" defer></script>
+    <script src="./toggleButtons.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -15,18 +16,17 @@
         <h1>Exercise Tabs</h1>
     </div>
     <div class="wrapper">
-        <h2>Description <span><button class="toggle">+</button></span></h2>
-        <div class="description" hidden>
+        <h2>Description <span><button class="toggle" id="description">+</button></span></h2>
+        <div class="hideShow" id="description" hidden>
             <p>We need a set of toggleable Tabs about three programming languages. </p>
             <ol>
                 <li>
                     <p>Structure HTML: <br>
-                        Create a div.tabs inside the below div.wrapper. <br>
-                        Create a div.tablist with a corresponding label. Create three children element: button with tab
-                        role. Add aria-selected and id attributes. <br>
-                        Create three tabpanels each with identic IDs as the buttons inside the tablist element. Place
-                        your
-                        text content inside each tabpanel.
+                        Create a div with role="tabs" inside the below div.wrapper with a corresponding label. <br>
+                        Create a div with role="tablist". Create three children element: button with tab role. Add
+                        aria-selected and id attributes. <br>
+                        Create three div with role="tabpanel" each with identic IDs as the buttons inside the tablist
+                        element. Place your text content inside each tabpanel.
                     </p>
 
                 </li>
@@ -49,6 +49,27 @@
     </div>
     <div class="wrapper">
         <h2>Tabs</h2>
+    </div>
+    <div class="wrapper solution">
+        <h2>Solution <span><button class="toggle" id="solution">+</button></span></h2>
+        <div class="hideShow" id="solution" hidden>
+            <div role="tabs" aria-label="Programming Languages">
+                <div role="tablist">
+                    <button role="tab" aria-selected="false" id="js">JS</button>
+                    <button role="tab" aria-selected="false" id="php">PHP</button>
+                    <button role="tab" aria-selected="false" id="python">Python</button>
+                </div>
+                <div role="tabpanel" id="js">
+                    Javascript is the languague of the internet.
+                </div>
+                <div role="tabpanel" id="php">
+                    PHP is the motor of the most common content management system of the web, WordPress.
+                </div>
+                <div role="tabpanel" id="python">
+                    Python is largely used for data manipulation and automation tasks.
+                </div>
+            </div>
+        </div>
     </div>
     <!-- 
     
