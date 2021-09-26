@@ -13,10 +13,11 @@
 
 <body>
     <div class="wrapper">
-        <h1>Exercise Tabs</h1>
+        <h1>Tabs</h1>
+        <p>Place your tabs here</p>
     </div>
     <div class="wrapper">
-        <h2>Description <span><button class="toggle" id="description">+</button></span></h2>
+        <h2>Exercise <span><button class="toggle" id="description">+</button></span></h2>
         <div class="hideShow" id="description" hidden>
             <p>We need a set of toggleable Tabs about three programming languages. </p>
             <ol>
@@ -45,27 +46,27 @@
                     </p>
                 </li>
             </ol>
+            <h2>Expected outcome: </h2>
+            <iframe src="https://giphy.com/embed/IxHKShRobs7fTbSatb" width="480" height="93" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/IxHKShRobs7fTbSatb">via GIPHY</a></p>
         </div>
-    </div>
-    <div class="wrapper">
-        <h2>Tabs</h2>
     </div>
     <div class="wrapper solution">
         <h2>Solution <span><button class="toggle" id="solution">+</button></span></h2>
         <div class="hideShow" id="solution" hidden>
             <div role="tabs" aria-label="Programming Languages">
                 <div role="tablist">
-                    <button role="tab" aria-selected="false" id="js">JS</button>
+                    <button role="tab" aria-selected="true" id="js">JS</button>
                     <button role="tab" aria-selected="false" id="php">PHP</button>
                     <button role="tab" aria-selected="false" id="python">Python</button>
                 </div>
                 <div role="tabpanel" id="js">
                     Javascript is the languague of the internet.
                 </div>
-                <div role="tabpanel" id="php">
+                <div role="tabpanel" id="php" hidden>
                     PHP is the motor of the most common content management system of the web, WordPress.
                 </div>
-                <div role="tabpanel" id="python">
+                <div role="tabpanel" id="python" hidden>
                     Python is largely used for data manipulation and automation tasks.
                 </div>
             </div>
